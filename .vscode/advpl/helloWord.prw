@@ -16,14 +16,14 @@ user function Emprestimo()
     local nValorParcela := nEmprestimo / nParcelas
 
     if nIdade < 18 .or. nIdade > 65 
-        alert("A pessoa que está solicitando emprestimo tem " + cValToChar(nIdade) + " anos de idade e tem o salario de " + cValToChar(nSalario) + " reais. o valor solicitado é de " + cValToChar(nEmprestimo) + " reais para ser pago em " + cValToChar(nParcelas) + " parcelas." + BREAKLINE + " O emprestimo foi reprovado: idade negada")
+        fwalertsucess("A pessoa que está solicitando emprestimo tem " + cValToChar(nIdade) + " anos de idade e tem o salario de " + cValToChar(nSalario) + " reais. o valor solicitado é de " + cValToChar(nEmprestimo) + " reais para ser pago em " + cValToChar(nParcelas) + " parcelas." + BREAKLINE + " O emprestimo foi reprovado: idade negada")
 
     elseif nParcelas < 3 .or. nParcelas > 24
         alert("A pessoa que está solicitando emprestimo tem " + cValToChar(nIdade) + " anos de idade e tem o salario de " + cValToChar(nSalario) + " reais. o valor solicitado é de " + cValToChar(nEmprestimo) + " reais para ser pago em " + cValToChar(nParcelas) + " parcelas." + BREAKLINE + " O emprestimo foi reprovado: numero de parcelas invalido")
     
     elseif nValorParcela > nPercentual 
-        alert("A pessoa que está solicitando emprestimo tem " + cValToChar(nIdade) + " anos de idade e tem o salario de " + cValToChar(nSalario) + " reais. o valor solicitado é de " + cValToChar(nEmprestimo) + " reais para ser pago em " + cValToChar(nParcelas) + " parcelas." + BREAKLINE + " O emprestimo foi reprovado: valor da parcela ultrapassa percentual")
+        fwalertsucess("A pessoa que está solicitando emprestimo tem " + cValToChar(nIdade) + " anos de idade e tem o salario de " + cValToChar(nSalario) + " reais. o valor solicitado é de " + cValToChar(nEmprestimo) + " reais para ser pago em " + cValToChar(nParcelas) + " parcelas." + BREAKLINE + " O emprestimo foi reprovado: valor da parcela ultrapassa percentual")
     else 
-        alert("A pessoa que está solicitando emprestimo tem " + cValToChar(nIdade) + " anos de idade e tem o salario de " + cValToChar(nSalario) + " reais. o valor solicitado é de " + cValToChar(nEmprestimo) + " reais para ser pago em " + cValToChar(nParcelas) + " parcelas." + BREAKLINE + " O emprestimo foi aprovado")
-    endif  
+        fwalertsucess("A pessoa que está solicitando emprestimo tem " + cValToChar(nIdade) + " anos de idade e tem o salario de " + cValToChar(nSalario) + " reais. o valor solicitado é de " + cValToChar(nEmprestimo) + " reais para ser pago em " + cValToChar(nParcelas) + " parcelas." + BREAKLINE + " O emprestimo foi aprovado")
+        endif  
 return
