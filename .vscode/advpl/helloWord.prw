@@ -8,10 +8,10 @@ user function Hello()
 return
 
 user function Emprestimo()
-    local nEmprestimo := 10000
-    local nIdade := 18
-    local nParcelas := 15
-    local nSalario := 3000
+    local nEmprestimo := al(fwInputbox("informe o valor do emprestimo"))
+    local nIdade := val(fwInputbox("informe sua idade"))
+    local nParcelas := val(fwInputbox("informe o numero de parcelas"))
+    local nSalario := val(fwInputbox("informe seu salario"))
     local nPercentual := nSalario * 0.3
     local nValorParcela := nEmprestimo / nParcelas
 
