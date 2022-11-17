@@ -1,0 +1,19 @@
+{
+    "advpl.environments": [
+        {
+            "environment": "environment",
+            "name": "ambiente local",
+            "server": "localhost",
+            "port": "1234",
+            "serverVersion": "191205P",
+            "passwordCipher": "CaYDvQzBbN13yE7gJV3ja1Q+VvH63nPvq3v3zlifgVZtcPSLF/CXbXWwjhzpC2YjAABEKieUdRMBZPbjAoniW0Sx=",
+            "includeList": "c:\\TOTVS\\Protheus\\Protheus\\include\\",
+            "user": "admin",
+            "smartClientPath": "c:\\TOTVS\\Protheus\\Protheus\\bin\\smartclient\\",
+            "enable": true,
+            "ssl": true
+        }
+    ],
+    "advpl.selectedEnvironment": "ambiente local",
+    "advpl.workspaceFolders": "c:\\fontes;"
+}
