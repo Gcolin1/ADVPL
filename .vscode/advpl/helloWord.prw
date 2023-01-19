@@ -25,5 +25,5 @@ user function Emprestimo()
         fwalertsucess("A pessoa que está solicitando emprestimo tem " + cValToChar(nIdade) + " anos de idade e tem o salario de " + cValToChar(nSalario) + " reais. o valor solicitado é de " + cValToChar(nEmprestimo) + " reais para ser pago em " + cValToChar(nParcelas) + " parcelas." + BREAKLINE + " O emprestimo foi reprovado: valor da parcela ultrapassa percentual")
     else 
         fwalertsucess("A pessoa que está solicitando emprestimo tem " + cValToChar(nIdade) + " anos de idade e tem o salario de " + cValToChar(nSalario) + " reais. o valor solicitado é de " + cValToChar(nEmprestimo) + " reais para ser pago em " + cValToChar(nParcelas) + " parcelas." + BREAKLINE + " O emprestimo foi aprovado")
-        endif  
+    endif  
 return
